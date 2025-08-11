@@ -54,7 +54,7 @@ nix(os) configuration for a lil server and website, coming soon ;3
 run this command:
 
 ```bash
-sudo nix run 'github:nix-community/disko/latest#disko-install' -- --write-efi-boot-entries --flake 'github:going-zowhere/zowhere-net#zowhere-mini' --disk main /dev/sda
+sudo nix --experimental-features "nix-command flakes" run 'github:nix-community/disko/latest#disko-install' -- --write-efi-boot-entries --flake 'github:going-zowhere/zowhere-net#zowhere-mini' --disk main /dev/sda
 ```
 
 ## installation (realistically)
