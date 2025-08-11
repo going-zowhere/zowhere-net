@@ -78,13 +78,18 @@
 
   # TODO Set global environment variables
   environment.variables = {
-    FLAKE = "/home/zoe/Nix";
+    FLAKE = "github:going-zowhere/zowhere-net#zowhere-mini";
     EDITOR = "hx";
   };
 
   # Tune up bash a little bit
   # TODO add shell aliases
-  programs.bash.blesh.enable = true;
+  programs.bash = {
+    blesh.enable = true;
+    shellAliases = {
+      update = "sudo nixos-rebuild switch --flake github:going-zowhere#zowhere-mini";
+    };
+  };
 
   # Configure users
   users = {
