@@ -2,8 +2,10 @@
   # Enable ssh on boot
   boot.initrd.network.ssh.enable = true;
 
-  # FIXME Authorize keys for user
-  #users.users.zoe.openssh.authorizedKeys.keys = [];
+  # Authorize keys for user
+  users.users.zoe.openssh.authorizedKeys.keys = [
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOyXLtQgXfkilT9AjSjqFa8CV2maM67rkisubJX8pYFY"
+  ];
 
   # Configure ssh
   services.openssh = {
