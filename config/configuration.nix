@@ -85,7 +85,7 @@
 
   # TODO Set global environment variables
   environment.variables = {
-    FLAKE = "/etc/nixos";
+    FLAKE = "/home/zoe/Nix";
     EDITOR = "hx";
   };
 

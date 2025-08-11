@@ -23,4 +23,14 @@
     enable = true;
     package = pkgs.gitFull;
   };
+
+  # Enable and configure `nh` helper
+  programs.nh = {
+    enable = true;
+    flake = "/home/zoe/Nix";
+    clean = {
+      enable = true;
+      extraArgs = "--keep 10";
+    };
+  };
 }
