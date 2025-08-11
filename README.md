@@ -6,7 +6,7 @@ nix(os) configuration for a lil server and website, coming soon ;3
 
 ### core/system stuff
 
-- [ ] hardware-configuration.nix
+- [x] hardware-configuration.nix
 - [ ] initial secrets files
 - [x] disko/dirlayout configs
 - [x] more proper SSH config
