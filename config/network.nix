@@ -1,6 +1,6 @@
 {config, ...}: {
   # Enable ssh on boot
-  boot.loader.initrd.network.ssh.enable = true;
+  boot.initrd.network.ssh.enable = true;
 
   # FIXME Authorize keys for user
   #users.users.zoe.openssh.authorizedKeys.keys = [];
