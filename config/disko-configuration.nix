@@ -3,7 +3,7 @@
     disk = {
       main = {
         type = "disk";
-        device = "/dev/disk/by-diskseq/1"; # FIXME
+        device = "/dev/sda";
         content = {
           type = "gpt";
           partitions = {
