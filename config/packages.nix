@@ -27,7 +27,7 @@
   # Enable and configure `nh` helper
   programs.nh = {
     enable = true;
-    flake = "/home/zoe/Nix";
+    flake = "github:going-zowhere/zowhere-net#zowhere-mini";
     clean = {
       enable = true;
       extraArgs = "--keep 10";
