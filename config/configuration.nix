@@ -3,8 +3,8 @@
   pkgs,
   ...
 }: {
-  # TODO Set the initially-installed version
-  #system.stateVersion = "";
+  # Set the initially-installed version
+  system.stateVersion = "25.05";
 
   # Configure hardware
   hardware = {
