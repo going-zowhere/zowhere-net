@@ -12,7 +12,7 @@
       path = "/run/secrets/copyparty/gu_password";
     };
     softsrv = {
-      file = ../secrets/softsrve.age;
+      file = ../secrets/softsrv.age;
       path = "/run/secrets/soft-serve/secrets.env";
     };
     waste = {

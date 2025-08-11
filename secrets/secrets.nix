@@ -14,11 +14,11 @@ let
   ];
 in {
   # Secrets files
-  user.age = zowhere;
-  cpp-zoe.age = zowhere;
-  cpp-gue.age = zowhere;
-  cloud.age = zowhere;
-  tunnel.age = zowhere;
-  softsrv.age = zowhere;
-  waste.age = zowhere;
+  "user.age".publicKeys = zowhere;
+  "cpp-zoe.age".publicKeys = zowhere;
+  "cpp-gue.age".publicKeys = zowhere;
+  "cloud.age".publicKeys = zowhere;
+  "tunnel.age".publicKeys = zowhere;
+  "softsrv.age".publicKeys = zowhere;
+  "waste.age".publicKeys = zowhere;
 }
