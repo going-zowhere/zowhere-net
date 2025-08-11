@@ -100,6 +100,7 @@
       isNormalUser = true;
       description = "Zoe Lehane";
       extraGroups = ["wheel"];
+      initialHashedPassword = "$y$j9T$B5fJfnrDZZ9bvZcA/kJ8p/$TgUROKxCvZzBq4YGiojTJiv2LpSUf/1h3D/1k.l46p.";
     };
   };
 }

@@ -92,6 +92,10 @@
               pkgs.soft-serve
               pkgs.wastebin
             ];
+
+            # User password
+            age.secrets.user.file = ./secrets/user.age;
+            users.users.zoe.hashedPasswordFile = config.age.secrets.user.path;
           })
         ];
       };
