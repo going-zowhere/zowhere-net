@@ -30,8 +30,6 @@
 
   # Enable and configure `nix` and flakes
   nix = {
-    package = pkgs.nixFlakes;
-
     # Configure nix
     settings = {
       # Enable flakes
