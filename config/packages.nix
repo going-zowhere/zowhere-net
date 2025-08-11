@@ -13,8 +13,14 @@
     helix
     bat
     pciutils
-    git
+    gitFull
     yazi
     bottom
   ];
+
+  # TODO Configure git
+  programs.git = {
+    enable = true;
+    package = pkgs.gitFull;
+  };
 }
