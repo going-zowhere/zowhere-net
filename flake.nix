@@ -92,10 +92,6 @@
               pkgs.soft-serve
               pkgs.wastebin
             ];
-
-            # User secrets
-            age.secrets.user.file = ./secrets/user.age;
-            users.users.zoe.hashedPasswordFile = config.age.secrets.user.path;
           })
         ];
       };
@@ -111,15 +107,6 @@
 
           # Internal modules
           ./config
-
-          # Initial user/tool config
-          {
-            # Global packages
-            environment.systemPackages = [agenix.packages.x86_64-linux.default];
-
-            # Initial user password
-            user.users.zoe.initialHashedPassword = "$y$j9T$B5fJfnrDZZ9bvZcA/kJ8p/$TgUROKxCvZzBq4YGiojTJiv2LpSUf/1h3D/1k.l46p.";
-          }
         ];
       };
     };
