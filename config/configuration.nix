@@ -78,7 +78,6 @@
 
   # TODO Set global environment variables
   environment.variables = {
-    FLAKE = "github:going-zowhere/zowhere-net#zowhere-mini";
     EDITOR = "hx";
   };
 
