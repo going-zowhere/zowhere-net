@@ -87,7 +87,7 @@
   programs.bash = {
     blesh.enable = true;
     shellAliases = {
-      update = "sudo nixos-rebuild switch --refresh --flake github:going-zowhere/zowhere-net#zowhere-mini";
+      update = "sudo nixos-rebuild --refresh switch --flake github:going-zowhere/zowhere-net#zowhere-mini";
     };
   };
 
