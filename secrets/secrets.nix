@@ -1,15 +1,11 @@
 let
   # Machine keys
-  root = "";
-  user = "";
-
-  # External key
+  root = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEWEgZHMLYpViu8lvaQvr8PTcOtNfVQLNZx3P8HMuNMW root@zowhere";
   zoe = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOyXLtQgXfkilT9AjSjqFa8CV2maM67rkisubJX8pYFY";
 
   # Group(s)
   zowhere = [
     root
-    user
     zoe
   ];
 in {
