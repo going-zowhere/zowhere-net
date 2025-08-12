@@ -2,19 +2,22 @@
 
 nix(os) configuration for a lil server and website, coming soon ;3
 
-## todo list for launch
+right now the most basic functionality is present, copyparty works(?), and i have a decent idea of the roadmap from here. a lot of things still need some polish and/or additional configuarion, but i'm pretty happy with the progress!
+
+## todo list for full launch
 
 ### core/system stuff
 
 - [x] hardware-configuration.nix
-- [ ] initial secrets files
+- [x] initial secrets files
 - [x] disko/dirlayout configs
 - [x] more proper SSH config
 - [x] define generated ssh keys
+- [ ] fix passwd/secrets situation
 - [ ] networking/firewall stuffs
   - [ ] static ip
   - [ ] port (un)blocking
-- [ ] addl cloudflare config
+- [x] addl cloudflare config
 - [ ] user config for soft-serve?
 - [x] db for wastebin(maybe)
 - [ ] static-web-server setup
@@ -23,13 +26,13 @@ nix(os) configuration for a lil server and website, coming soon ;3
 ### conveniences
 
 - [ ] some shell aliases
-- [ ] shell.nix just because
+- [ ] shell.nix for remote dev
+- [ ] proper WARP ssh access
 
 ### fluff/cosmetic
 
 - [ ] readmes/logues for cpp
 - [ ] fun lil motd for ssh login
-- [ ] custom service users?
 - [ ] add git config stuff
 - [ ] starship/zoxide/eza/etc.
 - [ ] fancy 404/err pages for sws
