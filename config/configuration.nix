@@ -103,7 +103,7 @@
   };
 
   # User password
-  age.secrets.user.file = ./secrets/user.age;
+  age.secrets.user.file = ../secrets/user.age;
 
   # Configure users
   users = {
