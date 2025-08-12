@@ -95,12 +95,7 @@
 
   # Tune up bash a little bit
   # TODO add more shell aliases
-  programs.bash = {
-    blesh.enable = true;
-    shellAliases = {
-      update = "sudo nixos-rebuild --refresh switch --flake github:going-zowhere/zowhere-net#zowhere-mini";
-    };
-  };
+  programs.bash.blesh.enable = true;
 
   # User password
   age.secrets.user.file = ../secrets/user.age;
