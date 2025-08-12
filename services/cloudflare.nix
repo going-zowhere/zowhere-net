@@ -10,11 +10,8 @@
     tunnels = {
       "985d435b-8a3b-46eb-a8a5-f92f15246e1e" = {
         credentialsFile = config.age.secrets.tunnel.path;
-        default = "http_status:404";
+        default = "hello_world";
         ingress = {
-          # Hello world
-          "hello.zowhere.net" = "hello_world";
-
           # Main website
           #"zowhere.net" = "http://localhost:8787";
 
