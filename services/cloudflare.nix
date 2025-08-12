@@ -2,15 +2,31 @@
   services.cloudflared = {
     enable = true;
 
-    # obtained via 'cloudflared login'
-    certificateFile = "${config.age.secrets.cloud.file}";
+    # Account cert.pem file via agenix
+    certificateFile = config.age.secrets.cloud.file;
 
-    # PLACEHOLDER remove prior to install and configure
-    # see https://wiki.nixos.org/wiki/Cloudflared
+    # Configure main tunnel setup
+    # FIXME disabled until config(s) are stable
     tunnels = {
-      "00000000-0000-0000-0000-000000000000" = {
-        credentialsFile = "${config.age.secrets.tunnel.file}";
+      "985d435b-8a3b-46eb-a8a5-f92f15246e1e" = {
+        credentialsFile = config.age.secrets.tunnel.file;
         default = "http_status:404";
+        ingress = {
+          # Hello world
+          "hello.zowhere.net" = "hello_world";
+
+          # Main website
+          #"zowhere.net" = "http://localhost:8787";
+
+          # Web-based services
+          #"party.zowhere.net" = "http://localhost:3923";
+          #"soft.zowhere.net" = "http://localhost:23232";
+          #"waste.zowhere.net" = "http://localhost:8088";
+
+          # SSH-based services
+          #"ssh.zowhere.net" = "ssh://localhost:22";
+          #"git.zowhere.net" = "ssh://localhost:23231";
+        };
       };
     };
   };
