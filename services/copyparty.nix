@@ -22,8 +22,8 @@
 
     # Create user accounts
     accounts = {
-      zoe.passwordFile = "/run/secrets/copyparty/zo_password";
-      guest.passwordFile = "/run/secrets/copyparty/gu_password";
+      zoe.passwordFile = config.age.secrets.cpp-zoe.path;
+      guest.passwordFile = config.age.secrets.cpp-gue.path;
     };
 
     # Create volume(s)
