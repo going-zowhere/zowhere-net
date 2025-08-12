@@ -10,18 +10,18 @@
     tunnels = {
       "985d435b-8a3b-46eb-a8a5-f92f15246e1e" = {
         credentialsFile = config.age.secrets.tunnel.path;
-        default = "hello_world";
+        default = "http_status:404";
         ingress = {
           # Main website
           #"zowhere.net" = "http://localhost:8787";
 
           # Web-based services
-          #"party.zowhere.net" = "http://localhost:3923";
+          "party.zowhere.net" = "http://localhost:3923";
           #"soft.zowhere.net" = "http://localhost:23232";
           #"waste.zowhere.net" = "http://localhost:8088";
 
           # SSH-based services
-          #"ssh.zowhere.net" = "ssh://localhost:22";
+          "ssh.zowhere.net" = "ssh://localhost:22";
           #"git.zowhere.net" = "ssh://localhost:23231";
         };
       };
