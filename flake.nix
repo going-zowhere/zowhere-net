@@ -74,29 +74,6 @@
           ./config
           ./services
           ./website
-
-          # Ensure core tools/overlays/configs
-          ({
-            config,
-            pkgs,
-            ...
-          }: {
-            # Overlays
-            nixpkgs.overlays = [copyparty.overlays.default];
-
-            # Global packages
-            environment.systemPackages = [
-              agenix.packages.x86_64-linux.default
-              pkgs.copyparty
-              pkgs.cloudflared
-              pkgs.soft-serve
-              pkgs.wastebin
-            ];
-
-            # User password
-            age.secrets.user.file = ./secrets/user.age;
-            users.users.zoe.hashedPasswordFile = config.age.secrets.user.path;
-          })
         ];
       };
 
@@ -111,6 +88,9 @@
 
           # Internal modules
           ./config
+
+          # Set user password
+          {users.users.zoe.initialHashedPassword = "$y$j9T$B5fJfnrDZZ9bvZcA/kJ8p/$TgUROKxCvZzBq4YGiojTJiv2LpSUf/1h3D/1k.l46p.";}
         ];
       };
     };
