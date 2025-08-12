@@ -28,8 +28,18 @@
       };
 
       # Copyparty user passwords
-      cpp-zoe.file = ../secrets/cpp-zoe.age;
-      cpp-gue.file = ../secrets/cpp-gue.age;
+      cpp-zoe = {
+        file = ../secrets/cpp-zoe.age;
+        owner = "copyparty";
+        group = "copyparty";
+        mode = "600";
+      };
+      cpp-gue = {
+        file = ../secrets/cpp-gue.age;
+        owner = "copyparty";
+        group = "copyparty";
+        mode = "600";
+      };
 
       # FIXME Disabled for now
       #waste = {
