@@ -3,13 +3,13 @@
     enable = true;
 
     # Account cert.pem file via agenix
-    certificateFile = config.age.secrets.cloud.file;
+    certificateFile = config.age.secrets.cloud.path;
 
     # Configure main tunnel setup
     # FIXME disabled until config(s) are stable
     tunnels = {
       "985d435b-8a3b-46eb-a8a5-f92f15246e1e" = {
-        credentialsFile = config.age.secrets.tunnel.file;
+        credentialsFile = config.age.secrets.tunnel.path;
         default = "http_status:404";
         ingress = {
           # Hello world
