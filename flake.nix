@@ -88,9 +88,6 @@
 
           # Internal modules
           ./config
-
-          # Set user password
-          {users.users.zoe.initialHashedPassword = "$y$j9T$B5fJfnrDZZ9bvZcA/kJ8p/$TgUROKxCvZzBq4YGiojTJiv2LpSUf/1h3D/1k.l46p.";}
         ];
       };
     };

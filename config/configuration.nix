@@ -97,9 +97,6 @@
   # TODO add more shell aliases
   programs.bash.blesh.enable = true;
 
-  # User password
-  age.secrets.user.file = ../secrets/user.age;
-
   # Configure users
   users = {
     mutableUsers = false;
@@ -107,7 +104,7 @@
       isNormalUser = true;
       description = "Zoe Lehane";
       extraGroups = ["wheel"];
-      hashedPasswordFile = config.age.secrets.user.path;
+      initialHashedPassword = "$y$j9T$B5fJfnrDZZ9bvZcA/kJ8p/$TgUROKxCvZzBq4YGiojTJiv2LpSUf/1h3D/1k.l46p.";
     };
   };
 }
