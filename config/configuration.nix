@@ -83,9 +83,14 @@
     };
   };
 
-  # TODO Set global environment variables
-  environment.variables = {
-    EDITOR = "hx";
+  # Configure env
+  environment = {
+    enableAllTerminfo = true;
+
+    # TODO Set global environment variables
+    variables = {
+      EDITOR = "hx";
+    };
   };
 
   # Tune up bash a little bit
