@@ -14,6 +14,8 @@ right now the most basic functionality is present, copyparty works(?), and i hav
 - [x] more proper SSH config
 - [x] define generated ssh keys
 - [ ] fix passwd/secrets situation
+  - [ ] switch to using specialisations
+  - [ ] re-hash/re-key secrets(maybe?)
 - [ ] networking/firewall stuffs
   - [ ] static ip
   - [ ] port (un)blocking
