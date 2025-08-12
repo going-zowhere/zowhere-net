@@ -5,12 +5,12 @@
       name = "zoe's ice cream shoppe";
       log_format = "txt";
       data_path = "/srv/softserve";
-      initial_admin_keys = ""; # TODO
+      initial_admin_keys = ""; # TODO load as env secret file?
       stats.listen_addr = ":23233";
 
       # SSH config
       ssh = {
-        listen_addr = ":232321";
+        listen_addr = ":23231";
         public_url = "ssh://git.zowhere.net";
         key_path = "";
         client_key_path = "";
