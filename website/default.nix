@@ -1,5 +1,5 @@
 {config, ...}: {
   imports = [
-    #./static-web-server.nix
+    ./static-web-server.nix
   ];
 }

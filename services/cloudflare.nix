@@ -13,7 +13,7 @@
         default = "http_status:404";
         ingress = {
           # Main website
-          #"zowhere.net" = "http://localhost:8787";
+          "zowhere.net" = "http://localhost:8787";
 
           # Web-based services
           "party.zowhere.net" = "http://localhost:3923";
@@ -21,7 +21,7 @@
           #"waste.zowhere.net" = "http://localhost:8088";
 
           # SSH-based services
-          "ssh.zowhere.net" = "ssh://localhost:22";
+          #"ssh.zowhere.net" = "ssh://localhost:22";
           #"git.zowhere.net" = "ssh://localhost:23231";
         };
       };
