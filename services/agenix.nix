@@ -1,8 +1,14 @@
 {config, ...}: {
   # Configure secrets
   age.secrets = {
-    cloud.file = ../secrets/cloud.age;
-    tunnel.file = ../secrets/tunnel.age;
+    cloud = {
+      file = ../secrets/cloud.age;
+      path = "/home/zoe/.cloudflared/cert.pem";
+    };
+    tunnel = {
+      file = ../secrets/tunnel.age;
+      path = "/home/zoe/.cloudflared/985d435b-8a3b-46eb-a8a5-f92f15246e1e.json";
+    };
     cpp-zoe = {
       file = ../secrets/cpp-zoe.age;
       path = "/run/secrets/copyparty/zo_password";
