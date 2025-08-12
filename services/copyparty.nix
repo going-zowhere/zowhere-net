@@ -7,6 +7,7 @@
     # Global settings
     settings = {
       name = "party at zowhere";
+      usernames = true;
       stats = true;
       xff-hdr = "cf-connecting-ip";
       no-robots = true;

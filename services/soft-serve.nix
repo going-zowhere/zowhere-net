@@ -5,8 +5,12 @@
       name = "zoe's ice cream shoppe";
       log_format = "txt";
       data_path = "/srv/softserve";
-      initial_admin_keys = ""; # TODO load as env secret file?
       stats.listen_addr = ":23233";
+
+      # Set correct initial admin key
+      initial_admin_keys = [
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOyXLtQgXfkilT9AjSjqFa8CV2maM67rkisubJX8pYFY 223009927+going-zowhere@users.noreply.github.com"
+      ];
 
       # SSH config
       ssh = {
