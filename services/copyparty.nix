@@ -10,6 +10,7 @@
       usernames = true;
       stats = true;
       xff-hdr = "cf-connecting-ip";
+      rproxy = 1;
       no-robots = true;
       force-js = true;
       vague-403 = true;
