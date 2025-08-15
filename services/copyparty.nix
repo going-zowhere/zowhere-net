@@ -30,7 +30,7 @@
     volumes = {
       # Webroot from /srv/copyparty
       "/" = {
-        path = "/srv/copyparty";
+        path = "/srv/copyparty/root";
         access = {
           r = "guest";
           A = "zoe";
@@ -43,7 +43,7 @@
 
       # Unsorted uploads from /srv/uploads
       "/uploads" = {
-        path = "/srv/uploads";
+        path = "/srv/uploads/copyparty";
         access = {
           wG = "*";
           rw = "guest";
